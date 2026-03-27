@@ -1,0 +1,1 @@
+{"compilerOptions":{"lib":["dom","esnext"],"strict":true,"module":"esnext","moduleResolution":"bundler","jsx":true,"outDir":"./out","baseUrl":".","paths":{"@/*":["src/*"]}},"include":["src"]}

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-secondary: #64748b;
+  --color-accent: #8b5cf6;
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted: #94a3b8;
+  --color-border: #e2e8f0;
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #3b82f6;
+    --color-primary-hover: #60a5fa;
+    --color-secondary: #94a3b8;
+    --color-accent: #a78bfa;
+    --color-background: #0f172a;
+    --color-foreground: #f8fafc;
+    --color-muted: #64748b;
+    --color-border: #1e293b;
+  }
+}
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-primary-hover: var(--color-primary-hover);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-muted: var(--color-muted);
+  --color-border: var(--color-border);
+  --font-family-heading: var(--font-heading);
+  --font-family-body: var(--font-body);
+}
+
+body {
+  @apply bg-background text-foreground font-body;
+}
